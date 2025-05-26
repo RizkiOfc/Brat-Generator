@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #eff2ef;
+  font-family: "Calibri",sans-serif;
+}
+
+main {
+  height: 100vh;
+}
+
+.content-centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  text-align: center;
+}
+
+.content {
+  width: 50%;
+  height: 35vh;
+  margin: 2rem auto;
+  background-color: white;
+  font-size: 5vw;
+  border-radius: 5px;
+  filter: blur(1px);
+  text-align: center;
+  overflow-wrap: break-word;   /* ⬅ agar teks panjang bisa patah */
+  word-break: break-word;      /* ⬅ memaksa teks panjang banget dipotong */
+  white-space: normal;     
+}
+
+.input {
+  margin: auto;
+  display: block;
+  width: 55vw;
+  padding: 0.5rem;
+  border: none;
+  outline: 0.8px solid black;
+  border-radius: 10px;
+  text-align: center;
+}
+
+
+@media screen and (max-width: 2000px) {
+  .content {
+    width: 40%;
+    height: 35vw;
+  }
+}
+
+#downloadBtn {
+  display: block;
+  margin: auto;
+  padding: 8px;
+  border: none;
+  outline: 1px solid black;
+  border-radius: 2px;
+  position: relative;
+  top: 25px;
+  background: white;
+}
+
+#downloadBtn:hover {
+  background: #eff2ef;
+  transition: all 0.3s ease-in-out;
+}
+
+.footer {
+  background-color: grey;
+  text-align: center;
+  padding: 20px 0;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+}
